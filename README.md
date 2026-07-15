@@ -1,28 +1,31 @@
 # MTC NP2900 — Firmware
 
-Kho phát hành firmware chính thức cho máy in **MTC NP2900** (Mono Laser Printer).
+Official firmware release repository for the **MTC NP2900** (Mono Laser Printer).
 
-## Cập nhật bằng ứng dụng (khuyến nghị)
+## Update via Application (Recommended)
 
-Dùng **MTC NP2900 Update** cho Windows: ứng dụng tự nhận máy in, kiểm tra phiên bản,
-tải và cập nhật firmware mới nhất. Xác thực chữ ký số tự động ở mọi bước.
+Use the **MTC NP2900 Update** application for Windows: the app automatically detects the printer,
+checks the version, and downloads/installs the latest firmware. Digital signature verification
+is performed automatically at every step.
 
-## Cập nhật thủ công
+## Manual Update
 
-1. Tải file `capt_update_vX.Y.Z_ENCRYPTED.bin` ở mục **Releases** (bản mới nhất).
-2. Tắt máy in. Cắm cáp USB vào máy tính.
-3. **Giữ phím GIẤY** trên máy in trong lúc bật nguồn — máy tính sẽ hiện ổ đĩa USB
-   tên `LBP2900-FW`.
-4. Chép file `.bin` vừa tải vào ổ đĩa đó. Máy tự kiểm tra, cập nhật và khởi động lại.
-5. Mở file `LBP2900_LOG.TXT` trong ổ đĩa (vào lại chế độ cập nhật) để xem phiên bản
-   và lịch sử cập nhật.
+1. Download the `capt_update_vX.Y.Z_ENCRYPTED.bin` file from the **Releases** section (latest version).
+2. Turn off the printer. Connect the USB cable to the computer.
+3. **Hold the Paper button** on the printer while turning on the power — the computer will
+   display a USB drive named `LBP2900-FW`.
+4. Copy the downloaded `.bin` file to that drive. The printer automatically verifies,
+   updates, and restarts.
+5. Open the `LBP2900_LOG.TXT` file on the drive (re-enter update mode) to view the
+   version and update history.
 
-## An toàn
+## Safety
 
-- File phát hành được **mã hóa và ký số**; máy in chỉ chấp nhận firmware chính chủ —
-  file hỏng hoặc bị sửa đổi sẽ bị từ chối, máy không thể bị hỏng vì cập nhật sai file.
-- `manifest.json` / `manifest.json.sig` trong mỗi Release dành cho ứng dụng cập nhật
-  (kiểm tra phiên bản + toàn vẹn); người dùng thủ công không cần quan tâm.
+- Release files are **encrypted and digitally signed**; the printer accepts only genuine
+  firmware — corrupted or modified files are rejected, so the printer cannot be damaged
+  by an incorrect update file.
+- The `manifest.json` / `manifest.json.sig` files in each Release are intended for the
+  update application (version and integrity checks); manual users do not need to use them.
 
 ---
-© MTC. Mọi thắc mắc bảo hành vui lòng liên hệ nơi bán.
+© MTC. For warranty inquiries, please contact the place of purchase.
