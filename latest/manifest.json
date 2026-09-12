@@ -1,0 +1,9 @@
+{
+    "product":  "NP2900",
+    "version":  "1.7.0",
+    "file":  "capt_update_v1.7.0_ENCRYPTED.bin",
+    "sha256":  "1dc863bfcf9a9e19ac64a15b8a3b2bf841d23cdb59e376d92b5d7b1444f484d2",
+    "size":  922112,
+    "notes":  "1. Fix rare blank page (all-white sheet), most often the first page of a job or the KEY test page\n2. Improve performance.",
+    "published":  "2026-08-10"
+}
